@@ -1,33 +1,9 @@
-<h1>ngClass</h1>
-
-<h3>1. [class.red--text]=""</h3>
-<div class="box" [class.red--text]="isRed">
-  <p>[class.xxxx]</p>
-</div>
-<div>
-  <input type="button" value="Toggle Red" (click)="textRed()">
-</div>
-
-
-<h3>
-  2.
-  <code>[ngClass]=""</code>
-</h3>
-<div class="box" [ngClass]="{'blue--text': isBlue}">
-  <p>[ngClass]=""</p>
-</div>
-<div>
-  <input type="button" value="Toggle Blue" (click)="textBlue()">
-</div>
-
-
-<h3>
-  3.
-  <code>[ngClass]="" Default</code>
-</h3>
-<div class="box" [ngClass]="isYellow ? 'yellow--text':'red--text'">
-  <p>[ngClass]=""</p>
-</div>
-<div>
-  <input type="button" value="Toggle Yellow" (click)="textYellow()">
-</div>
+<h1>Share Knowledge</h1>
+<ul>
+  <li><a href="/ng-class">NgClass</a></li>
+  <li><a href="/ng-binding">Angular Binding</a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<h1>ng-binding!</h1>
+
+
+<app-attr-binding [name]="'DEMO111'"></app-attr-binding>
+
+
+<app-twoway-binding [(name)]="parentName"></app-twoway-binding>
+
+
+<app-event-binding (ageChange)="onAgeChange($event)"></app-event-binding>
+
+<p>{{componentAge}}</p>
+
+
