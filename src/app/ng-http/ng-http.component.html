@@ -1,0 +1,7 @@
+<p>ng-http example!</p>
+<input type="button" value="Get Country" (click)="fetchData()">
+<ul>
+  <li *ngFor="let item of countries">
+    {{item.name}}
+  </li>
+</ul>

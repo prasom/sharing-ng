@@ -9,20 +9,22 @@ import { AttrBindingComponent } from './ng-binding/attr-binding/attr-binding.com
 import { TwowayBindingComponent } from './ng-binding/twoway-binding/twoway-binding.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EventBindingComponent } from './ng-binding/event-binding/event-binding.component';
-
+import { NgHttpComponent } from './ng-http/ng-http.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-
     NgClassComponent,
     NgBindingComponent,
     AttrBindingComponent,
     TwowayBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    NgHttpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule
   ],
