@@ -1,0 +1,20 @@
+<p>ng-form works!</p>
+<h1>Basic Form</h1>
+
+<div>
+  <form [formGroup]="advanceForm" novalidate>
+    <p><input type="text" placeholder="Card ID" formControlName="cardId" /></p>
+    <p style="color: red" *ngIf="advanceForm.get('cardId').invalid">
+      Error Message For Card Id
+    </p>
+    <p><input type="text" placeholder="Email" formControlName="email" /></p>
+    <p>
+      <input type="text" placeholder="Confirm Email" formControlName="confirmEmail" />
+    </p>
+    <p style="color: red" *ngIf="advanceForm.hasError('mismatchedEmails')">
+      Email != Confirm Email
+    </p>
+  </form>
+
+  <!-- <input type="text" placeholder="Card ID" [formControl]="cardId" /> -->
+</div>

@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EventBindingComponent } from './ng-binding/event-binding/event-binding.component';
 import { NgHttpComponent } from './ng-http/ng-http.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgFormComponent } from './ng-form/ng-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +20,13 @@ import { HttpClientModule } from '@angular/common/http';
     AttrBindingComponent,
     TwowayBindingComponent,
     EventBindingComponent,
-    NgHttpComponent
+    NgHttpComponent,
+    NgFormComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
     AppRoutingModule
   ],
